@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'Montage45'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_41B2B7E39EA741DF9B52268C18DA508D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A639125087E242DDBBCCAAA8B993DC09 }}
           package: .
