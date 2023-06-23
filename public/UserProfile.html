@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Profile</title>
+      <link rel="stylesheet" type="text/css" href="css/UserProfile.css">
+      <link rel="stylesheet" type="text/css" href="css/Header.css">
+   </head>
+
+   <body>
+        <header class="headerContainer">
+        </header>
+
+        <!-- From this line to the end are the body of our UserProfile page, 
+            which are a sample user's information that we hardcoded in the html, 
+            these contents will be subsitituted once we connect our website to the database.  -->
+        <div class="user_information_container">
+            <div class="profile_img_container">
+
+                <div id="user_profile_portrait_container" class="portrait_container">
+                    <img class="user_portrait" src="image/ProfilePic2.jpeg" alt="default portriat">
+                </div>
+
+                <div class="user_information">
+                    <div class="user_information_content">
+                        <h3 id="user_name">User2</h3>
+                        <div>
+                            <p id="user_description">I am a normal user!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Messages Section -->
+        <div id='messages' class="current">
+
+            <div class='messageHeader'>
+                <ul>
+                <li class = "function" id='Collection'> <a href="">Collection</a></li>
+                <li class = "function" id="pastComment"> <a href="">Comments</a> </li>
+                <li class = "function" id="sendMessage"> <a href="">Send Message</a> </li>
+                </ul>
+            </div>
+            
+            <div id="contents">
+            </div>
+        </div>
+        
+        <script src="js/UserProfile.js"></script>
+        <script src="js/Header.js"></script>
+        <script src="js/Sidebar.js"></script>
+    </body>
+</html>

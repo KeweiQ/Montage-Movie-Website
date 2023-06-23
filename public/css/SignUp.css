@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	background-image: url("/image/background.png");
+}
+
+a {
+ 	text-decoration: none;
+}
+
+.content {
+    text-align: center;
+}
+
+.mid_block {
+    margin-top: 5%;
+}
+
+#big_logo {
+    margin: 20px auto;
+    display: inline-block;
+    width: 500px;
+}
+
+#registerationForm {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inputBox {
+    margin: 20px auto;
+    display: block;
+    height: 50px;
+    width: 300px;
+    border-color: cornflowerblue;
+    background: rgba(0,0,0,.2);
+    color: lightblue;	
+}
+
+input[type="text"] {
+    font-size:15px;
+    padding-left: 10px;
+}
+
+input[type="password"] {
+    font-size:15px;
+    padding-left: 10px;
+}
+
+.registerButton {
+    margin: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background: rgba(0,0,0,.2);
+    color: lightblue;
+}
+
+.registerButton a {
+    color: lightblue;
+}
+
+::placeholder {
+    color: grey;
+}

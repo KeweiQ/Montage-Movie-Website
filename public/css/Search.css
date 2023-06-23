@@ -1,0 +1,83 @@
+body {
+    background: url("/image/background.png") fixed;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    width: 80%;
+    height: 500px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.menu_bar {
+    background: rgba(0, 0, 0, .5);
+    border-bottom: 1px solid rgb(77, 169, 255);
+}
+
+.menu_bar ul {
+    margin: 0px;
+    padding-inline-start: 16%;
+}
+
+.menu_bar ul li {
+    width: 36%;
+    padding: 10px;
+    font-size: 130%;
+	list-style: none;
+	text-align: center;
+	display: inline-block;
+}
+
+.menu_bar ul li a {
+    color: rgb(77, 169, 255);
+}
+
+#search_result {
+    background: rgba(0, 0, 0, .0);
+}
+
+#all_movies {
+    background: rgba(0, 0, 0, .5);
+}
+
+#movie_list_container {
+    visibility: visible;
+    float: left;
+    width: 100%;
+    margin-bottom: 10%;
+    background: rgba(0, 0, 0, .5);
+}
+
+#search_result_container {
+    visibility: hidden;
+    float: left;
+    width: 100%;
+    margin-bottom: 5%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.movie_link {
+    margin: 1%;
+    width: 17%;
+    display: inline-block;
+    vertical-align: top;
+    background: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+.movie_link_img {
+    width: 90%;
+    margin: 5%;
+}
+
+.movie_link_text {
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: lightblue;
+}

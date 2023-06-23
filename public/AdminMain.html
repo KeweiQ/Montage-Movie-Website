@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Admin Main Page</title>
+      <link rel="stylesheet" type="text/css" href="css/AdminMain.css">
+      <link rel="stylesheet" type="text/css" href="css/Header.css">
+   </head>
+
+   <body>
+      <header class="headerContainer">
+      </header>
+
+      <div class="user_information_container">
+         <div class="profile_img_container">
+            <div id="user_profile_portrait_container" class="portrait_container">
+               <img class="user_portrait" src="image/ProfilePic2.jpeg" alt="default portriat">
+               <div id="upload_button_container">
+                  <button class="upload_button" style="cursor: pointer">Upload</button>
+               </div>
+            </div>
+   
+            <div class="user_information">
+               <div class="user_information_content">
+                  <p id="user_name"></p>
+                  <div>
+                     <p id="user_description">I am an admin!</p>
+                  </div>
+                  <button id='log_out' style="cursor: pointer">LOG OUT</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- The Messages Section -->
+      <div id='messages' class="current">
+
+         <div class='messageHeader'>
+            <ul>
+               <li class = "function" id="Message"> <a href="">Messages</a> </li>
+               <li class = "function" id='reports'> <a href="">Reports</a></li>
+               <li class = "function" id="users"> <a href="">Users</a></li>
+               <li class = "function" id="account"> <a href="">Password</a></li>
+            </ul>
+         </div>
+         
+         <div id="contents">
+            <!-- First message -->
+         </div>
+      </div>
+      
+      <script src="js/AdminMain.js"></script>
+      <script src="js/Header.js"></script>
+      <script src="js/Sidebar.js"></script>
+   </body>
+</html>

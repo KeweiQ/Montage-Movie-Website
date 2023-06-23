@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Movie Infomation</title>
+        <link rel="stylesheet" type="text/css" href="css/MovieInfo.css">
+        <link rel="stylesheet" type="text/css" href="css/Header.css">
+    </head>
+
+    <body>
+        <header class="headerContainer">
+        </header>        
+
+        <!-- From this line to the end are the body of our MovieInfo page. 
+            One specific movie is hardcoded into the body, and there are also hardcoded users' comments. 
+            these contents will be subsitituted once we connect our website to the database, but the layout will be the same  -->
+        <div id="pageContentContainer">
+
+            <div id="movieContentContainer">
+                <div id="movieNameContainer">
+                    <h1 id="movieName">
+                        How To Train Your Dragon
+                    </h1>
+                </div>
+
+                <div id="movieInformation">
+                    <div id="moviePosterContainer">
+                        <img src="image/p1.png" id="moviePosterImg" alt="movieImg">
+                    </div>
+
+                    <div id="movieOverviewContainer">
+                        <h2 id="movieOverview">
+                            Overview
+                        </h2>
+
+                        <p id="movieOverviewContent">
+                                Hiccup (Jay Baruchel) is a Norse teenager from the island of Berk, 
+                                where fighting dragons is a way of life. His progressive views and 
+                                weird sense of humor make him a misfit, despite the fact that his 
+                                father (Gerard Butler) is chief of the clan. Tossed into dragon-fighting 
+                                school, he endeavors to prove himself as a true Viking, but when he 
+                                befriends an injured dragon he names Toothless, he has the chance to plot 
+                                a new course for his people's future.
+                        </p>
+                    </div>
+
+                    <div id="watchTtrailorContainer">
+                        <button id="watchTtrailor"  style="cursor: pointer">
+                            <img id="playButtonImg" src="image/playButtonImg.jpg" alt="playButtonImg">
+                        </button>
+                        <span id="textWatchTrailor">Watch Trailor</span>
+                    </div>
+
+                    <div id="addCollectionContainer">
+                        <button id="addCollectionButton"  style="cursor: pointer">
+                            <span id="plusSign">+</span>
+                        </button>
+                        <span id="addCollectionMsg"> Add to Collection</span>
+                    </div>
+
+                </div>
+
+                <div id="movieInfosContainer">
+                    <p>Homepage: <span id="Homepage"></span></p>
+                    <p>Release Date: <span id="ReleasedDate"></span></p>
+                    <p>Status: <span id="Status">Released</span></p>
+                    <p>Runtime: <span id="Runtime"></span></p>
+                    <p>Budget: <span id="Budget">100000</span></p>
+                    <p>Language: <span id="Language">English, French, 普通话</span></p>
+                    <p>Genres: <span id="Genres">Action, Comedy</span></p>
+                    <p>Production: <span id="Production">Hamilton Entertainment, Kungfuman Culture Media, Aurora Alliance Films</span></p>
+                    <p>Popularity: <span id="Popularity"></span></p>
+                </div>
+
+            </div>
+
+            <div id="movieCommentsContainer">
+                <div id="movieCommentsContent">
+                    <div id="commentTitleContainer">
+                        <p id="commentsTitle">Comments</p>
+                    </div>
+                    <div id="addCommentDiv">
+                        <textarea id="commentContent" placeholder="Post your comments here:"></textarea>
+                        <div class="stars" data-rating="0">
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                            <span class="star">&nbsp;</span>
+                        </div>
+                        
+                        <div id="buttonCommentContainer">
+                            <button id="commentButton" style="cursor: pointer">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="otherCommentContainer">
+            </div>
+
+        </div>
+        <script src="js/MovieInfo.js"></script>
+        <script src="js/Header.js"></script>
+        <script src="js/Sidebar.js"></script>
+    </body>
+</html>

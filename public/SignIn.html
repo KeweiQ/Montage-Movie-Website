@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+ 	    <meta charset="utf-8">
+        <title>Sign In</title>
+        <link rel="stylesheet" type="text/css" href="css/SignIn.css">
+        <link rel="stylesheet" type="text/css" href="css/Header.css">
+    </head>
+
+    <body>
+        <header class="headerContainer">
+        </header>
+            
+        <div class="content">
+            <div class="mid_block">
+                <img src="image/logo.png" class="logo" id="big_logo" alt="">
+            </div>
+            <div class="form">
+                <form action="/users/login" method="post" id='userInfoForm'>
+                    <input class="sign_in_input" id='username' name="username" type="text" placeholder="User name">
+                    <input class="sign_in_input" id='password' name="password" type="password" placeholder="Password">
+                    <button class="btn" id="signin_btn" style="cursor: pointer">Sign in</button>
+                    <button class="btn" id="signup_btn" style="cursor: pointer">Sign up</button>
+                </form>
+            </div>  
+        </div>
+
+        <script src="js/SignIn.js"></script>
+        <script src="js/Header.js"></script>
+        <script src="js/Sidebar.js"></script>
+    </body>
+</html>

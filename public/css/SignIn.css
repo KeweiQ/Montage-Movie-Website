@@ -1,0 +1,68 @@
+body {
+    background-color: white;
+    background-image: url("/image/background.png");
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    text-align: center;
+}
+
+.mid_block {
+    margin-top: 5%;
+}
+
+#big_logo {
+    margin: 20px auto;
+    display: inline-block;
+    width: 500px;
+}
+
+#userInfoForm {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sign_in_input {
+    margin: 20px auto;
+    display: block;
+    height: 50px;
+    width: 300px;
+    border-color: cornflowerblue;
+    background: rgba(0,0,0,.2);
+    color: lightblue;
+}
+
+input[type="text"] {
+    font-size:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type="password"] {
+    font-size:15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.btn {
+    margin: 20px;
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: cornflowerblue;
+    background: rgba(0,0,0,.2);
+    color: lightblue;
+}
+
+.btn a {
+    color: lightblue;
+}
+
+::placeholder {
+    color: grey;
+}

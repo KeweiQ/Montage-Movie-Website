@@ -1,0 +1,268 @@
+
+body {
+    background: url('/image/background.png') fixed;
+	margin: 0;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+ 	text-decoration: none;
+ 	color: black;
+}
+
+.bannerPic {
+	display: block;
+    width: 100%;
+    margin-left: 190px;
+	height: 300px;
+}
+
+#messages {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+	margin-top: 20px;
+	margin-bottom: 1%;
+    width: 80%;
+    min-height: 350px;
+}
+
+.messageHeader {
+	border-bottom: 1px solid grey;
+}
+
+.messageHeader ul {
+	margin: 0px;
+}
+
+.messageHeader ul li {
+	padding: 10px;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 150%;
+	font-weight: bold;
+	list-style: none;
+	display: inline-block;
+}
+
+.messageHeader a {
+	color: lightblue;
+}
+
+.message {
+	background-color: rgba(0, 0, 0, 0.5);
+	overflow: auto;
+	min-height: 120px;
+    border-bottom: 1px solid grey;
+}
+
+.messageIconContainer {
+	width: 80px;
+	float: left;
+}
+
+.messageIcon {
+	border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	margin-top: 20%;
+	margin-left: 30%;
+}
+
+.moviePoster {
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+	/* border-radius: 50%; */
+}
+
+.profilePoster {
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.messageContent {
+	margin: 0px;
+	width: 520px;
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 8px;
+	color: wheat;
+	font-weight: 200;
+}
+
+.messageContent h3 {
+	font-weight: 200;
+}
+
+.function {
+	width: 10%;
+}
+
+.function a{
+	font-weight: 200;
+}
+
+h4 {
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+.comment {
+	border: 1px solid black;
+	padding: 10px;
+	max-width: 1200px;
+	margin-top: 30px;
+}
+
+.comment table {
+	max-width: 80%;
+	margin-top: 20px;
+}
+
+.updateInfo {
+	/* float: left; */
+	margin-top: 2%;
+	margin-left: 30%;
+    display: block;
+    height: 50px;
+    width: 30%;
+    border-color: cornflowerblue;
+    background: rgba(0,0,0,.2);
+    color: lightblue;
+}
+
+
+.user_information_container{
+	background: url("/image/UserMainBg.jpeg");
+    position: relative;
+    width: 80%;
+    height: 330px;
+    margin-left: 10%;
+    margin-top: 60px;
+    /* background: rgba(0, 0, 0, 0.5); */
+    box-shadow:1px 1px 2px rgba(0,0,0,0.5);
+}
+
+#user_name {
+	padding-top: 10px;
+	font-size: 150%;
+	font-weight: 200;
+	color: white;
+}
+
+.portrait_container{
+    position: relative;
+    float: left;
+    width: 256px;
+    height: 256px;
+    border: 2px solid hsla(0,0%,100%,.4);
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+.user_portrait{
+    display: block;
+    width: 256px;
+    height: 256px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+#upload_button_container {
+	visibility: hidden;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+    border-radius: 50%;
+	background: rgba(0, 0, 0, .8);
+}
+
+.upload_button {
+	width: 50%;
+	height: 15%;
+	margin-top: 45%;
+	margin-left: 25%;
+	background: rgba(0, 0, 0, .0);
+	border-color: lightblue;
+	color: lightblue;
+}
+
+.user_information{
+    height: 115px;
+    position: relative;
+	top: 128px;
+	/* background-color:red; */
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.user_information_content{
+	height: 105px;
+	margin-left: 30%;
+}
+
+#user_description{
+    position: relative;
+    float: left;
+    bottom: 10px;
+	color: white;
+	font-weight: 200;
+}
+
+.profile_img_container{
+    position: absolute;
+    bottom: 2px;
+    width: 100%;
+
+}
+
+.movie_link {
+    margin: 1%;
+    width: 150px;
+    float: left;
+    background: rgba(0, 0, 0, .5);
+}
+
+.movie_link_img {
+    width: 90%;
+    margin: 5%;
+}
+
+.movie_link_text {
+    padding-left: 10px;
+    color: lightblue;
+}
+
+#updateButton {
+	margin-top: 2%;
+	margin-left: 38%;
+	margin-bottom: 2%;
+	width: 15%;
+	height: 40px;
+	border-color: lightblue;
+	color: lightblue;
+	background: rgba(0, 0, 0, .0);
+}
+
+#log_out {
+	height: 30%;
+	width: 15%;
+	margin-right: 5%;
+	float: right;
+	border-color: lightblue;
+	color: lightblue;
+	background: rgba(0, 0, 0, .0);
+}
+
+.messageFrom {
+	color: wheat;
+	font-weight: 200;
+}

@@ -1,0 +1,101 @@
+.header {
+    top: 0px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background: rgba(0, 0, 0, .5);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_content {
+    margin: 20px;
+    height: 20px;
+}
+
+.header_left {
+    float: left;
+}
+
+.header_right {
+    float: right;
+}
+
+#header_input {
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    border: 0px;
+    background: rgba(0, 0, 0, .3);
+    color: lightblue;
+}
+
+#header_logo {
+    margin: 6px;
+    height: 48px;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input[type="text"] {
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+    overflow-x: hidden;
+    transition: 0.2s;
+    padding-top: 80px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+    color: rgb(224, 79, 254);
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: pink;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.sidebar_button {
+    height: 20px;
+    margin-right: 10px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: lightblue;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, .3) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

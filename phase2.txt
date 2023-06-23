@@ -1,0 +1,46 @@
+# team45
+# CSC309 Project Phase1
+
+# Process to start our project
+ - Open Google Chrome.
+ 
+ - Enter https://montage45.herokuapp.com/ and load into it, you will reach the index page.
+ - Try to hover the mouse over different posters but don't click it, then user will find that the background is changing to the movie of that poster.
+ - Users are able to see the most popular movies recently in this page, and by clicking the poster, you can enter the main page for a movie.
+ - Also, you can search a movie by its name in the search part of our header.(top right)
+ - In the movie-info page, a non-login user can only watch the trailor of this movie and go through others' comments. But if user wants to use more functionalities of our website, he will need to sign up/sign in first!
+ ** Tips: Since there are too many movies, our example data of 'comments' doesn't cover all of them. So if you want to see the example of other users' comments in the movie main page, you should use the movie 'Joker', 'Frozen II' or 'Hustlers'. (You can easily find them in the first section of index page)
+ 
+# Instructions for Users
+    - Our database already has 3 users with username: 'user1', 'user2', 'user3'. Their passwords are all 'user' as required. You can choose to log in any of these account, each of them has his own example data already.
+    - After sign-in, user goes to his own main page called UserMain. And there are 4 functionality buttons in the middle of the page.
+        - 'Messages': User could see all the messages that are sent to him. Let's say user1 has a message from 'Cui'. By pressing text 'Cui' in message part, user1 could go to the profile page of 'Cui'
+            - In the profile page, user1 is able to see all collections, comments of 'Cui' and send a message back to him by pressing 'Collection', 'Comments' and 'Send Message' buttons respectively.
+        - 'Comments': Show all the comments posted by the current user.
+        - 'Collections': Show all the collections of the current user. And you can press the poster of any collection to visit the main page of that movie.
+        - 'Update': User is able to update his own nickname and password.
+    - Log-in user is able to use all functionalities in the main page of any movie, including:
+        - watch trailor
+        - go through others' comment
+        - post comment
+        - add to his own collections
+        - check other author's profile
+    - Also, if user thinks someone posted an improper comment, user could press the 'report' button and let our admin to handle this.
+    - While going through others' comment, if user thinks one author just posted a really good one and he wants to make friends with him, then he can press the author's name in the browser to get into the author's profile.
+
+# Instructions for Admin
+    - Our database already has 1 admin with username: 'admin' and password 'admin' as required. You should sign in with this account because in our design, user can not become an admin by signing up. (Need us developers to set them as an admin)
+    - After sign-in, admin goes to his own main page. And there are also 4 functionality buttons in this page.
+        - 'Messages': This serves the same functionality with that one for Users.
+        - 'Reports': Admin is able to handle reports from User. For each report, admin can choose to 'Ignore' or 'Delete'.
+            - 'Ignore': This means admin thinks that the comment reported is legal and should not be deleted
+            - 'Delete': This means admin thinks that the comment reported is illegal, and this comment would be deleted in anywhere of our website.
+        - 'Users': Of course Admin is able to manage all the accounts! 
+            - Admin is able to check all users' profile in this page by clicking the 'profile' button.
+            - Moreover, if admin believes that one user has been doing some illegal things too many times, then admin is able to ban this user's account by pressing the 'BAN' button.
+        - 'Update': Admin is able to update the password of any user simply by inputing his username and new password.
+
+
+
+
+
