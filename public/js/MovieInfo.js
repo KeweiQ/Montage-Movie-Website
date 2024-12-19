@@ -72,7 +72,7 @@ function addPostComment(e) {
         let data = {
             content: commentContent,
             movie: result.title,
-            poster: 'http://image.tmdb.org/t/p/w500/' + result.poster_path
+            poster: 'https://image.tmdb.org/t/p/w500/' + result.poster_path
         }
         const request = new Request(url2, {
             method: 'post', 
@@ -107,7 +107,7 @@ watchTrailor.addEventListener('click', playTrailor);
 // It will be substituted by get link from the database operation later. 
 function playTrailor(e) {
     e.preventDefault();
-    const urlTrailor = "http://api.themoviedb.org/3/movie/" + movieId + "/videos?api_key=1a296faa954277370b2890eac8443422"
+    const urlTrailor = "https://api.themoviedb.org/3/movie/" + movieId + "/videos?api_key=1a296faa954277370b2890eac8443422"
     fetch(urlTrailor)
     .then((response) => response.json()
     ).then((result) => {
@@ -176,7 +176,7 @@ fetch(url)
     .then((response) => response.json()
     ).then((result) => {
         movieNameChange.innerText = result.title
-        moviePoster.src = 'http://image.tmdb.org/t/p/w500/' + result.poster_path
+        moviePoster.src = 'https://image.tmdb.org/t/p/w500/' + result.poster_path
         movieOverview.innerText = result.overview
         status.innerText = result.status
         budget.innerText = result.budget
@@ -223,7 +223,7 @@ function addToCollection(e) {
             const data = {
                 movieid: result.id,
                 name: result.title,
-                poster: 'http://image.tmdb.org/t/p/w500/' + result.poster_path
+                poster: 'https://image.tmdb.org/t/p/w500/' + result.poster_path
             }
             const request = new Request(urlServer, {
                 method: 'post', 

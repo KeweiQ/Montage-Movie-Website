@@ -58,7 +58,7 @@ function addMovie(movieId, movieTitle, movieImg, yearContainer) {
     if (movieImg === null) {
         img.src = 'image/empty.png';
     } else {
-        img.src = 'http://image.tmdb.org/t/p/w500/' + movieImg;
+        img.src = 'https://image.tmdb.org/t/p/w500/' + movieImg;
     }
 
     const name = element.lastElementChild.firstElementChild;
