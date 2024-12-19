@@ -79,7 +79,7 @@ function addMovie(movieId, movieTitle, movieImg, yearContainer) {
 for (let i = 1; i < 11; i++) {
     const year = '#year' + i;
     const yearContainer = document.querySelector(year);
-    const url = 'https://api.themoviedb.org/3/movie/popular?api_key=33da95ec55c42e5b21c3d72c61fc0fa0&page=' + i;
+    const url = 'https://api.themoviedb.org/3/movie/popular?include_adult=false&api_key=33da95ec55c42e5b21c3d72c61fc0fa0&page=' + i;
     fetch(url)
         .then((response) => response.json()
         ).then((result) => {

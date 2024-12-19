@@ -76,7 +76,7 @@ function addMovie(movieId, movieTitle, movieImg) {
 const mode = localStorage.getItem('mode');
 if (mode === 'search') {
     const searchMovieTitle = localStorage.getItem('title');
-    const url = 'https://api.themoviedb.org/3/search/movie?api_key=33da95ec55c42e5b21c3d72c61fc0fa0&language=en-US&query=' + searchMovieTitle;
+    const url = 'https://api.themoviedb.org/3/search/movie?include_adult=false&api_key=33da95ec55c42e5b21c3d72c61fc0fa0&language=en-US&query=' + searchMovieTitle;
     fetch(url)
         .then((response) => response.json()
         ).then((result) => {
@@ -96,7 +96,7 @@ if (mode === 'search') {
 
 if (mode === 'all') {
     for (let i = 1; i < 50; i++) {
-        const url = 'https://api.themoviedb.org/3/movie/popular?api_key=33da95ec55c42e5b21c3d72c61fc0fa0&page=' + 'i';
+        const url = 'https://api.themoviedb.org/3/movie/popular?include_adult=false&api_key=33da95ec55c42e5b21c3d72c61fc0fa0&page=' + i;
         fetch(url)
             .then((response) => response.json()
             ).then((result) => {

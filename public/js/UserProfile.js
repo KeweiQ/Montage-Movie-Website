@@ -133,7 +133,7 @@ function sendMsgToUser(e) {
         if (res.status === 200) {
             // If student was added successfully, tell the user.
             window.location = '/user_profile'
-            alert("message sended successfully")
+            alert("message sent successfully")
         } 
     }).catch((error) => {
         console.log(error)
