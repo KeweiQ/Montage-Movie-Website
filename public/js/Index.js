@@ -34,7 +34,9 @@ function changeBackdrop(movieId, yearContainer) {
     fetch(url)
         .then((response) => response.json()
         ).then((result) => {
-            if (result.backdrop_path !== null) {
+            if (result.backdrop_path == null) {
+                yearContainer.lastElementChild.firstElementChild.src = 'image/empty.png';
+            } else {
                 const backdrop = 'https://image.tmdb.org/t/p/original' + result.backdrop_path;
                 yearContainer.lastElementChild.firstElementChild.src = backdrop;
             }

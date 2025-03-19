@@ -18,7 +18,10 @@ a {
 
 .big_poster {
     width: 100%;
+    aspect-ratio: 16 / 9;
     vertical-align: bottom;
+    object-fit: contain;
+    background: rgb(127, 127, 127);
 }
 
 .movie_list {
